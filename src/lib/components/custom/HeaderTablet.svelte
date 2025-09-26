@@ -32,12 +32,8 @@
 
   <!-- Menu for Tablet -->
   {#if isOpen}
-    <nav class="px-6 pb-5 space-y-2 bg-white border-t border-gray-200">
-      <a
-        href="#"
-        class="block text-base font-medium text-gray-700 hover:text-black"
-        >Home</a
-      >
+    <nav class="w-[35%] px-6 py-2 space-y-2 bg-white border-t border-gray-200">
+      <a href="/" class="block text-base font-medium text-gray-700 hover:text-black">Home</a>
 
       <details class="group">
         <summary
@@ -46,9 +42,8 @@
           Product
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href="#" class="block text-sm text-gray-600 hover:text-black"
-            >Link</a
-          >
+          <a href="/product" class="block text-sm text-gray-600 hover:text-black">Residential AC</a>
+          <a href="/product" class="block text-sm text-gray-600 hover:text-black">Commercial AC</a>
         </div>
       </details>
 
@@ -59,17 +54,12 @@
           Buy
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href="#" class="block text-sm text-gray-600 hover:text-black"
-            >Link</a
-          >
+          <a href="/buy" class="block text-sm text-gray-600 hover:text-black">Online</a>
+          <a href="/buy" class="block text-sm text-gray-600 hover:text-black">Offline</a>
         </div>
       </details>
 
-      <a
-        href="#"
-        class="block text-base font-medium text-gray-700 hover:text-black"
-        >E-Catalogue</a
-      >
+      <a href="/catalogue" class="block text-base font-medium text-gray-700 hover:text-black">E-Catalogue</a>
 
       <details class="group">
         <summary
@@ -78,9 +68,9 @@
           News
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href="#" class="block text-sm text-gray-600 hover:text-black"
-            >Link</a
-          >
+          <a href="/news" class="block text-sm text-gray-600 hover:text-black">Promotion</a>
+          <a href="/news" class="block text-sm text-gray-600 hover:text-black">Event</a>
+          <a href="/news" class="block text-sm text-gray-600 hover:text-black">Article</a>
         </div>
       </details>
 
@@ -91,9 +81,10 @@
           Support
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href="#" class="block text-sm text-gray-600 hover:text-black"
-            >Link</a
-          >
+          <a href="/support" class="block text-sm text-gray-600 hover:text-black">After Sales</a>
+          <a href="/support" class="block text-sm text-gray-600 hover:text-black">Service Center</a>
+          <a href="/support" class="block text-sm text-gray-600 hover:text-black">Installer Registration</a>
+          <a href="/support" class="block text-sm text-gray-600 hover:text-black">Warranty Registration</a>
         </div>
       </details>
 
@@ -104,17 +95,12 @@
           About Us
         </summary>
         <div class="ml-4 mt-1 space-y-1">
-          <a href="#" class="block text-sm text-gray-600 hover:text-black"
-            >Link</a
-          >
+          <a href="/aboutus" class="block text-sm text-gray-600 hover:text-black">Brand</a>
+          <a href="/aboutus" class="block text-sm text-gray-600 hover:text-black">Introduction</a>
         </div>
       </details>
 
-      <a
-        href="#"
-        class="block text-base font-medium text-gray-700 hover:text-black"
-        >Partner System</a
-      >
+      <a href="/partner" class="block text-base font-medium text-gray-700 hover:text-black">Partner System</a>
     </nav>
   {/if}
 </header>
