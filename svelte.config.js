@@ -21,6 +21,7 @@ const config = {
 			base: ''
 		},
 		prerender: {
+			entries:['*'],
 			handleHttpError: 'warn'
 		}
 	}
