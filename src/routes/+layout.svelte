@@ -1,4 +1,6 @@
 <script>
+	export const prerender = true;
+	
 	import { onMount } from 'svelte';
 	import { initScreenWatcher } from '@/lib/hooks/useScreen.js';
 	import '@/app.css';
@@ -10,6 +12,7 @@
 	import FooterDesktop from '@/lib/components/custom/FooterDesktop.svelte';
 	import FooterTablet from '@/lib/components/custom/FooterTablet.svelte';
 	import FooterMobile from '@/lib/components/custom/FooterMobile.svelte';
+
 	
 	let { children } = $props();
 	

@@ -1,6 +1,8 @@
 <script>
+    export const prerender = true;
     import Banner from "@/lib/components/custom/home/Banner.svelte";
     import Blockquote from "@/lib/components/custom/Blockquote.svelte";
+
 </script>
 
 <Banner />
