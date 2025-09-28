@@ -1,6 +1,4 @@
 <script>
-	export const prerender = true;
-	
 	import { onMount } from 'svelte';
 	import { initScreenWatcher } from '@/lib/hooks/useScreen.js';
 	import '@/app.css';
