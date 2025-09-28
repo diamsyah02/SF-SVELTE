@@ -1,5 +1,5 @@
 <script>
-  import { isMobile, isTablet, isDesktop } from '$lib/hooks/useScreen';
+  import { isMobile, isTablet, isDesktop } from '@/lib/hooks/useScreen';
   export let show = 'all' // 'mobile' | 'tablet' | 'desktop' | 'all' = 'all';
 </script>
 

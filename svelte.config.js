@@ -10,6 +10,9 @@ const config = {
 		alias: {
 			"@/*": "./src/*",
 		},
+		prerender: {
+			entries: ['/']
+		}
 	}
 };
 
