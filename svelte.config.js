@@ -11,7 +11,6 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null,
 			strict: false
 		}),
 		alias: {
