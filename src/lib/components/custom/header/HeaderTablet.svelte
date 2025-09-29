@@ -9,12 +9,14 @@
 >
   <div class="flex items-center justify-between px-6 py-4 w-full">
     <!-- Logo -->
-    <img
-      src="https://www.dreamers.id/img_artikel/9yyy.jpg"
-      alt="Logo"
-      class="w-48 h-auto object-contain"
-      loading="eager"
-    />
+    <div class="text-left">
+      <img
+        src="https://www.dreamers.id/img_artikel/9yyy.jpg"
+        alt="Logo"
+        class="w-48 h-20 object-contain"
+        loading="eager"
+      />
+    </div>
 
     <!-- Hamburger -->
     <button
