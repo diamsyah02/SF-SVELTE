@@ -31,11 +31,11 @@
 </ResponsiveWrapper>
 <ResponsiveWrapper show="tablet">
 	<HeaderTablet />
-	<div class="mt-44"></div>
+	<div class="mt-28"></div>
 </ResponsiveWrapper>
 <ResponsiveWrapper show="mobile">
 	<HeaderMobile />
-	<div class="mt-36"></div>
+	<div class="mt-16"></div>
 </ResponsiveWrapper>
 {@render children?.()}
 <ResponsiveWrapper show="desktop">
