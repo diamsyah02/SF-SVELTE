@@ -1,29 +1,16 @@
+// svelte.config.js
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	preprocess: vitePreprocess(),
-	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			strict: false
-		}),
-		alias: {
-			"@/*": "./src/*",
-		},
-		paths: {
-			base: ''
-		},
-		prerender: {
-			entries:['*'],
-			handleHttpError: 'warn'
-		}
-	}
+export default {
+  kit: {
+    adapter: adapter({
+      fallback: '200.html' // optional, hanya jika pakai CSR fallback
+    }),
+	alias: {
+		"@/*": "./src/*",
+	},
+    prerender: {
+      entries: ['*'] // atau sesuai kebutuhan
+    }
+  }
 };
-
-export default config;

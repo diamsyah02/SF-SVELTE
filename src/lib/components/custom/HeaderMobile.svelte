@@ -38,7 +38,7 @@
       <a href="/" class="block text-sm font-medium hover:text-white/80">After Party</a>
       <a href="/" class="block text-sm font-medium hover:text-white/80">Merchandise</a>
       <a href="/" class="block text-sm font-medium hover:text-white/80">Green Movement</a>
-      <a href="/" class="block text-sm font-medium hover:text-white/80">Contact Us</a>
+      <a href="/contact" class="block text-sm font-medium hover:text-white/80">Contact Us</a>
       <a href="/" class="block text-sm font-medium hover:text-white/80">Login</a>
     </nav>
   {/if}

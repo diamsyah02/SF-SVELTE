@@ -50,7 +50,7 @@
             </NavigationMenu.Link>
           </NavigationMenu.Item>
           <NavigationMenu.Item>
-            <NavigationMenu.Link href="/" class="text-lg font-medium hover:text-black transition-colors">
+            <NavigationMenu.Link href="/contact" class="text-lg font-medium hover:text-black transition-colors">
               Contact Us
             </NavigationMenu.Link>
           </NavigationMenu.Item>

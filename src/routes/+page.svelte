@@ -1,7 +1,16 @@
 <script>
+    import {  onMount } from "svelte";
     import Banner from "@/lib/components/custom/home/Banner.svelte";
     import Blockquote from "@/lib/components/custom/Blockquote.svelte";
 
+    async function getData() {
+        const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+        const data = await res.json();
+        console.log(data);
+    }
+    onMount(() => {
+        getData();
+    });
 </script>
 
 <Banner />
