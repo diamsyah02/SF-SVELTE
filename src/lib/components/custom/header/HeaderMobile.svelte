@@ -13,7 +13,7 @@
         src="https://www.dreamers.id/img_artikel/9yyy.jpg"
         alt="Logo"
         class="w-full h-10 object-contain"
-        loading="eager"
+        loading="lazy"
       />
     </div>
 
