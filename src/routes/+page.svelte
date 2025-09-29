@@ -12,7 +12,12 @@
         getData();
     });
 </script>
-
+<svelte:head>
+    <title>Home</title>
+    <meta name="description" content="Synchronize Festival 2025 - Home" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:description" content="Synchronize Festival 2025 - Home" />
+</svelte:head>
 <Banner />
 <div class="px-10 md:px-24 lg:px-42 py-10 md:py-24 lg:py-24">
     <Blockquote className="text-center">

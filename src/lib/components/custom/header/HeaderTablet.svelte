@@ -14,7 +14,7 @@
         src="https://www.dreamers.id/img_artikel/9yyy.jpg"
         alt="Logo"
         class="w-48 h-20 object-contain"
-        loading="eager"
+        loading="lazy"
       />
     </div>
 
