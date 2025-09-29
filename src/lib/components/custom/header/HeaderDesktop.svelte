@@ -1,5 +1,5 @@
 <script>
-  import * as NavigationMenu from "../ui/navigation-menu";
+  import * as NavigationMenu from "@/lib/components/ui/navigation-menu";
 </script>
 
 <header class="fixed top-0 left-0 right-0 z-50 hidden lg:flex justify-center bg-blue-800/80 text-white backdrop-blur border-b border-gray-200">
