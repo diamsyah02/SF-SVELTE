@@ -1,16 +1,14 @@
 // svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 
 export default {
   kit: {
-    adapter: adapter({
-      fallback: '200.html' // optional, hanya jika pakai CSR fallback
-    }),
-	alias: {
-		"@/*": "./src/*",
-	},
+    adapter: adapter(),
+    alias: {
+      "@/*": "./src/*",
+    },
     prerender: {
-      entries: ['*'] // atau sesuai kebutuhan
+      entries: ['*'] // kalau kamu mau prerender semua halaman yang bisa
     }
   }
 };
