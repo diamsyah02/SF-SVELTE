@@ -1,5 +1,5 @@
 // svelte.config.js
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-static';
 
 export default {
   kit: {

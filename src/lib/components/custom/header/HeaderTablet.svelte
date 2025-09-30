@@ -1,6 +1,10 @@
 <script>
   import { Menu, X } from "@lucide/svelte";
   let isOpen = false;
+  function handleRedirect(url) {
+    isOpen = false;
+    window.location.href = url;
+  }
 </script>
 
 <!-- Tablet Header: Hanya tampil di md -->
@@ -35,14 +39,14 @@
   <!-- Menu for Tablet -->
   {#if isOpen}
     <nav class="w-[35%] px-6 py-2 space-y-2 border-t border-gray-200">
-      <a href="/" class="block text-base font-medium hover:text-white/80">Home</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">Lineup</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">Ticket</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">After Party</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">Merchandise</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">Green Movement</a>
-      <a href="/contact" class="block text-base font-medium hover:text-white/80">Contact Us</a>
-      <a href="/" class="block text-base font-medium hover:text-white/80">Login</a>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/")}>Home</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/lineup")}>Lineup</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/ticket")}>Ticket</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/after-party")}>After Party</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/merchandise")}>Merchandise</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/green-movement")}>Green Movement</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/contact")}>Contact Us</button>
+      <button class="block text-base font-medium hover:text-white/80" on:click={() => handleRedirect("/login")}>Login</button>
     </nav>
   {/if}
 </header>
