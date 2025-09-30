@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Domain website kamu
-const domain = 'https://synchronizefestival.com/';
+const domain = 'https://synchronizefest.asyncawait.my.id/';
 
 // Cari semua file +page.svelte atau +page.js di src/routes
 const files = glob.sync('src/routes/**/+page.{svelte,js,ts}', {
