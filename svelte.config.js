@@ -9,8 +9,5 @@ export default {
     alias: {
       "@/*": "./src/*",
     },
-    prerender: {
-      entries: [] // kalau kamu mau prerender semua halaman yang bisa
-    }
   }
 };
