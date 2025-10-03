@@ -7,7 +7,7 @@
     <Carousel.Content>
         <Carousel.Item>
             <img
-                src="https://www.synchronizefestival.com/assets/images/d1.png"
+                src="https://cdn.jsdelivr.net/gh/diamsyah02/FOR-TEST-ANYTHING/d1.png"
                 alt="banner"
                 loading="lazy"
                 class="w-full object-cover"
@@ -15,7 +15,7 @@
         </Carousel.Item>
         <Carousel.Item>
             <img
-                src="https://www.synchronizefestival.com/assets/images/d3.png"
+                src="https://cdn.jsdelivr.net/gh/diamsyah02/FOR-TEST-ANYTHING/d3.png"
                 alt="banner"
                 loading="lazy"
                 class="w-full object-cover"
