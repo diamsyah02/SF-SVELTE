@@ -60,23 +60,23 @@
   }
 </script>
 
-<section class="w-[100%] lg:w-[22%] xl:w-[22%] h-screen z-50 fixed top-0 left-0 right-0 bg-white shadow-lg overflow-y-hidden slide-in-left">
+<section class="w-[100%] lg:w-[22%] xl:w-[22%] h-screen z-50 fixed top-0 left-0 right-0 bg-white shadow-lg slide-in-left">
     <div class="h-full flex flex-col overflow-y-auto scrollbar-hide pb-10">
       <div class="flex flex-row items-center p-2 relative">
         <img
           src="https://www.dreamers.id/img_artikel/9yyy.jpg"
           alt="Logo"
-          class="w-full h-64 lg:h-full xl:h-full object-cover lg:object-contain xl:object-contain"
+          class="w-full h-[150px] lg:h-full xl:h-full object-cover lg:object-contain xl:object-contain"
           loading="lazy"
         />
-        <div class="block lg:hidden xl:hidden absolute top-2 right-2 cursor-pointer bg-white p-2 rounded-full">
-          <X size={20} onclick={() => sidebar.update((value) => !value)} />
+        <div class="block lg:hidden xl:hidden absolute top-2 right-2 cursor-pointer bg-white p-1 rounded-full">
+          <X size={12} onclick={() => sidebar.update((value) => !value)} />
         </div>
       </div>
       {#each items as item}
         <button class="flex flex-row gap-2 items-center py-2 px-3 hover:bg-blue-800/80 hover:text-white cursor-pointer" onclick={() => handleRedirect(item)}>
             <item.icon size={20} />
-            <div class="text-xl lg:text-sm xl:text-sm font-bold ml-2">
+            <div class="text-sm ml-2">
                 {item.title}
             </div>
         </button>
@@ -85,7 +85,7 @@
     <div class="absolute bottom-0 w-full bg-white py-2 px-3">
       <button class="w-full flex flex-row items-center hover:bg-blue-800/80 hover:text-white cursor-pointer" onclick={() => handleRedirect({title: 'Login', url: '/login'})}>
       <LogInIcon size={20} />
-      <div class="text-xl lg:text-sm xl:text-sm font-bold ml-4">
+      <div class="text-sm ml-4">
         Login
       </div>
     </button>

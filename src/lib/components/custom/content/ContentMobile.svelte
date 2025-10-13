@@ -1,5 +1,5 @@
-<div class="w-full h-screen flex justify-center items-center text-white">
-    <div class="w-[100%] h-full flex flex-col justify-center items-center border border-gray-200 overflow-y-auto scrollbar-hide pb-20">
+<div class="w-full h-screen text-white">
+    <div class="w-[100%] h-full border border-gray-200 overflow-y-auto scrollbar-hide pb-20">
         <slot />
     </div>
 </div>
