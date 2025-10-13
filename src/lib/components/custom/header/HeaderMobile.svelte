@@ -2,14 +2,6 @@
   import { title } from "@/lib/stores";
   import { ShoppingBasket, Menu } from "@lucide/svelte";
   import { sidebar } from "@/lib/stores";
-  // import { onMount } from "svelte";
-  // import { Menu, X } from "@lucide/svelte"; // Icon shadcn-compatible
-  // let isOpen = false;
-
-  // function handleRedirect(url) {
-  //   isOpen = false;
-  //   window.location.href = url;
-  // }
 </script>
 
 <div class="w-full z-50 flex justify-center items-center">
@@ -18,45 +10,9 @@
         <div class="text-2xl font-bold">
             {$title}
         </div>
-        <div>
+        <div class="relative cursor-pointer">
+            <div class="absolute bottom-[10px] left-[10px] w-4 h-4 bg-red-500 rounded-full text-white text-center text-xs">7</div>
             <ShoppingBasket size={24} />
         </div>
     </div>
 </div>
-
-<!-- <header class="fixed top-0 left-0 right-0 z-50 lg:hidden bg-blue-800/80 text-white backdrop-blur border-b border-gray-200">
-  <div class="flex items-center justify-between px-4 py-3">
-    <div class="text-left">
-      <img
-        src="https://www.dreamers.id/img_artikel/9yyy.jpg"
-        alt="Logo"
-        class="w-full h-10 object-contain"
-        loading="lazy"
-      />
-    </div>
-    <button
-      class="text-white focus:outline-none"
-      on:click={() => (isOpen = !isOpen)}
-      aria-label="Toggle Menu"
-    >
-      {#if isOpen}
-        <X class="w-6 h-6" />
-      {:else}
-        <Menu class="w-6 h-6" />
-      {/if}
-    </button>
-  </div>
-
-  {#if isOpen}
-    <nav class="px-4 py-4 space-y-2 border-t border-gray-200">
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/")}>Home</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/lineup")}>Lineup</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/ticket")}>Ticket</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/after-party")}>After Party</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/merchandise")}>Merchandise</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/green-movement")}>Green Movement</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/contact")}>Contact Us</button>
-      <button class="block text-sm font-medium hover:text-white/80" on:click={() => handleRedirect("/login")}>Login</button>
-    </nav>
-  {/if}
-</header> -->
