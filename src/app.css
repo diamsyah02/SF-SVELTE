@@ -119,3 +119,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  overflow: hidden;
+}
+
+/* Tambahkan di file CSS kamu yang di-load */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari and Opera */
+}

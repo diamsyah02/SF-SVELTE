@@ -1,6 +1,8 @@
 <script>
     import Banner from "@/lib/components/custom/home/Banner.svelte";
     import Blockquote from "@/lib/components/custom/Blockquote.svelte";
+    import { title } from "@/lib/stores";
+    title.update((value) => "Home");
 </script>
 <svelte:head>
     <title>Home</title>
@@ -9,7 +11,7 @@
     <meta property="og:description" content="Synchronize Festival 2025 - Home" />
 </svelte:head>
 <Banner />
-<div class="px-10 md:px-24 lg:px-42 py-10 md:py-24 lg:py-24">
+<div class="p-10">
     <Blockquote className="text-center">
         DI TAHUN INI 2025 BUKAN HANYA MENJADI PERAYAAN EDISI KE-10 #SYNCHRONIZEFEST, TAPI JUGA TURUN MERAYAKAN ULANG TAHUN LABEL MUSIK @DEMAJORSRECS DAN KOLEKTIF SENI RUPA @RUANGRUPA YANG KE-25 <br/><br/>
         PERAYAAN SYNCHRONIZE FEST MENGUSUNG TEMA #SILANGSALING, YANG MENCERMINKAN BAGAIMANA MUSIK, SENI, DAN BUDAYA SALING TERHUBUNG SERTA MENCIPTAKAN HARMONI DALAM EKOSISTEM FESTIVAL MUSIK INDONESIA. TEMA BESAR INI SEJALAN DENGAN KOLABORASI LINTAS KREASI ANTARA MUSIK DAN SENI #BER25AMA @DEMAJORSRECS DAN @RUANGRUPA.   

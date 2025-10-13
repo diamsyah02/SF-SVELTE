@@ -14,13 +14,10 @@
 </script>
 <ResponsiveWrapper show="desktop">
 	<HeaderDesktop />
-	<div class="mt-20"></div>
 </ResponsiveWrapper>
 <ResponsiveWrapper show="tablet">
 	<HeaderTablet />
-	<div class="mt-28"></div>
 </ResponsiveWrapper>
 <ResponsiveWrapper show="mobile">
 	<HeaderMobile />
-	<div class="mt-16"></div>
 </ResponsiveWrapper>

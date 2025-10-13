@@ -1,16 +1,8 @@
  <script>
-    import {  onMount } from "svelte";
     import Banner from "@/lib/components/custom/home/Banner.svelte";
     import Blockquote from "@/lib/components/custom/Blockquote.svelte";
- 
-    async function getData() {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}Tickets/getData`);
-        const data = await res.json();
-        console.log(data);
-    }
-    onMount(() => {
-        getData();
-    });
+    import { title } from "@/lib/stores";
+    title.update((value) => "Ticket");
  </script>
 
  <svelte:head>

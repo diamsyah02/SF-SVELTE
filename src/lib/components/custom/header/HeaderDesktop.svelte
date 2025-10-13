@@ -1,11 +1,28 @@
 <script>
-  import * as NavigationMenu from "@/lib/components/ui/navigation-menu";
+  // import * as NavigationMenu from "@/lib/components/ui/navigation-menu";
+  import { title } from "@/lib/stores";
+  import { ShoppingBasket, Menu, X } from "@lucide/svelte";
+  import { sidebar } from "@/lib/stores";
 </script>
 
-<header class="fixed top-0 left-0 right-0 z-50 hidden lg:flex justify-center bg-blue-800/80 text-white backdrop-blur border-b border-gray-200">
+<div class="w-full z-50 flex justify-center items-center">
+    <div class="w-[50%] py-6 px-10 flex justify-between items-center shadow-lg">
+        {#if $sidebar}
+          <X size={24} onclick={() => sidebar.update((value) => !value)} class="cursor-pointer" />
+        {:else}
+          <Menu size={24} onclick={() => sidebar.update((value) => !value)} class="cursor-pointer" />
+        {/if}
+        <div class="text-2xl font-bold">
+            {$title}
+        </div>
+        <div>
+            <ShoppingBasket size={24} class="cursor-pointer" />
+        </div>
+    </div>
+</div>
+<!-- <header class="fixed top-0 left-0 right-0 z-50 hidden lg:flex justify-center bg-blue-800/80 text-white backdrop-blur border-b border-gray-200">
   <div class="w-full max-w-screen-xl px-6">
     <div class="flex items-center justify-between h-20">
-      <!-- Logo -->
       <div class="flex items-center">
         <img
           src="https://www.dreamers.id/img_artikel/9yyy.jpg"
@@ -15,10 +32,8 @@
         />
       </div>
 
-      <!-- Navigation Menu -->
       <NavigationMenu.Root viewport={false}>
         <NavigationMenu.List class="flex items-center gap-6">
-          <!-- Static Link -->
           <NavigationMenu.Item>
             <NavigationMenu.Link href="/" class="text-lg font-medium hover:text-black transition-colors">
               Home
@@ -63,4 +78,4 @@
       </NavigationMenu.Root>
     </div>
   </div>
-</header>
+</header> -->

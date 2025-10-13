@@ -1,6 +1,7 @@
 <script>
   import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-
+  import { title } from "@/lib/stores";
+  title.update((value) => "Contact Us");
 </script>
 <svelte:head>
     <title>Contact Us</title>
