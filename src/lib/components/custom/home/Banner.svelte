@@ -1,6 +1,7 @@
 <script>
     import * as Carousel from "$lib/components/ui/carousel/index.js";
     import Autoplay from "embla-carousel-autoplay";
+    import { toast } from "svelte-sonner";
 </script>
 
 <Carousel.Root class="w-full" plugins={[Autoplay({ delay: 5000 })]}>
@@ -11,6 +12,7 @@
                 alt="banner"
                 loading="lazy"
                 class="w-full object-cover"
+                onerror={() => toast.error('Image carousel not found')}
             />
         </Carousel.Item>
         <Carousel.Item>
@@ -19,6 +21,7 @@
                 alt="banner"
                 loading="lazy"
                 class="w-full object-cover"
+                onerror={() => toast.error('Image carousel not found')}
             />
         </Carousel.Item>
     </Carousel.Content>
