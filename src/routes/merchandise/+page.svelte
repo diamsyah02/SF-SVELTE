@@ -72,7 +72,7 @@
                 <div class="p-4">
                     <h3 class="text-lg font-semibold">{item.title}</h3>
                     <p class="text-gray-600">{item.description}</p>
-                    <p class="text-lg font-semibold">Rp {item.price}</p>
+                    <p class="text-lg font-semibold">Rp {parseInt(item.price).toLocaleString()}</p>
                 </div>
             </div>
         {/each}

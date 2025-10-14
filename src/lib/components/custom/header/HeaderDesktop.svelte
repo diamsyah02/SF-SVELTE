@@ -14,9 +14,9 @@
         <h1 class="text-2xl font-bold">
             {$title}
         </h1>
-        <div class="relative cursor-pointer">
+        <a href="/cart" class="relative">
             <div class="absolute bottom-[10px] left-[10px] w-4 h-4 bg-red-500 rounded-full text-white text-center text-xs">7</div>
             <ShoppingBasket size={24} />
-        </div>
+        </a>
     </div>
 </div>
