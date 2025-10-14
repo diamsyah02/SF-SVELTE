@@ -1,15 +1,15 @@
 <script>
   import { title } from "@/lib/stores";
   import { ShoppingBasket, Menu, X } from "@lucide/svelte";
-  import { sidebar } from "@/lib/stores";
+  import { menuSidebar } from "@/lib/stores";
 </script>
 
 <div class="w-full z-50 flex justify-center items-center">
     <div class="w-[50%] py-6 px-10 flex justify-between items-center shadow-lg">
-        {#if $sidebar}
-          <X size={24} onclick={() => sidebar.update((value) => !value)} class="cursor-pointer" />
+        {#if $menuSidebar}
+          <X size={24} onclick={() => menuSidebar.update((value) => !value)} class="cursor-pointer" />
         {:else}
-          <Menu size={24} onclick={() => sidebar.update((value) => !value)} class="cursor-pointer" />
+          <Menu size={24} onclick={() => menuSidebar.update((value) => !value)} class="cursor-pointer" />
         {/if}
         <div class="text-2xl font-bold">
             {$title}

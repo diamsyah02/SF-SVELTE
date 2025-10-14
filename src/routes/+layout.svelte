@@ -4,8 +4,9 @@
   	import Header from '@/lib/components/custom/header/Header.svelte';
     // import Footer from '@/lib/components/custom/footer/Footer.svelte';
 	import Content from '@/lib/components/custom/content/Content.svelte';	
-  	import AppSidebar from '@/lib/components/custom/AppSidebar.svelte';
-	import { sidebar } from '@/lib/stores';
+  	import MenuSidebar from '@/lib/components/custom/MenuSidebar.svelte';
+	import AuthSidebar from '@/lib/components/custom/AuthSidebar.svelte';
+	import { menuSidebar, authSidebar } from '@/lib/stores';
 	let { children } = $props();
 </script>
 
@@ -13,8 +14,11 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{#if $sidebar}
-<AppSidebar />
+{#if $menuSidebar}
+<MenuSidebar />
+{/if}
+{#if $authSidebar}
+<AuthSidebar />
 {/if}
 <Header />
 <Content>

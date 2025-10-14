@@ -1,12 +1,12 @@
 <script>
   import { title } from "@/lib/stores";
   import { ShoppingBasket, Menu } from "@lucide/svelte";
-  import { sidebar } from "@/lib/stores";
+  import { menuSidebar } from "@/lib/stores";
 </script>
 
 <div class="w-full z-50 flex justify-center items-center">
     <div class="w-[100%] px-4 py-2 flex justify-between items-center shadow-lg">
-        <Menu size={20} onclick={() => sidebar.update((value) => !value)} />
+        <Menu size={20} onclick={() => menuSidebar.update((value) => !value)} />
         <div class="text-md font-bold">
             {$title}
         </div>
