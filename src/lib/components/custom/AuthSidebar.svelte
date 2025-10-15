@@ -14,6 +14,8 @@
   let phoneRegister = "";
   let birthdayRegister = "";
 
+  let typeInputBirthday = "text";
+
   let isRegister = false;
 
   function login() {
@@ -70,7 +72,7 @@
       <Input type="tel" name="phone" id="phone" placeholder="Phone" oninput={(e) => phoneRegister = e.target.value} />
     </div>
     <div class="w-full">
-      <Input type="date" name="birthday" id="birthday" placeholder="Birthday" oninput={(e) => birthdayRegister = e.target.value} />
+      <Input type={typeInputBirthday} name="birthday" id="birthday" placeholder="Birthday" onfocus={() => (typeInputBirthday = "date")} onblur={() => (typeInputBirthday = "text")} oninput={(e) => birthdayRegister = e.target.value} />
     </div>
     <div class="w-full flex flex-row gap-2">
       <button type="button" class="w-full p-1 bg-blue-800/80 hover:bg-blue-800 text-white rounded-md" onclick={register} aria-label="Register">Register</button>
