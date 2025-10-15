@@ -10,6 +10,7 @@
     PersonStanding,
     X,
     ListChevronsDownUp,
+    LogOutIcon,
   } from "@lucide/svelte";
   import { menuSidebar, authSidebar, isLogin } from "@/lib/stores";
   import { goto } from "$app/navigation";
@@ -102,7 +103,11 @@
           onclick={handleAuth}
           aria-label="Login"
         >
-          <item.icon size={20} />
+          {#if $isLogin != ""}
+            <LogOutIcon size={20} />
+          {:else}
+            <LogInIcon size={20} />
+          {/if}
           <div class="text-sm ml-2">{$isLogin != "" ? "Logout" : item.title}</div>
         </button>
       {:else}
