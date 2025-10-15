@@ -1,7 +1,8 @@
 <script>
   import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-  import { title } from "@/lib/stores";
+  import { title, menuSidebar } from "@/lib/stores";
   title.update((value) => "After Party");
+  menuSidebar.set(false);
 </script>
 <svelte:head>
     <title>After Party</title>

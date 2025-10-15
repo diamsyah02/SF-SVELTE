@@ -1,7 +1,8 @@
 <script>
   import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-  import { title, isLoading } from "@/lib/stores";
+  import { title, isLoading, menuSidebar } from "@/lib/stores";
   title.update((value) => "Rundown");
+  menuSidebar.set(false);
 
   let rundownImg = 'RUN1'
   let listBtnDay = [
@@ -41,7 +42,7 @@
 </svelte:head>
 
 <div class="p-6 lg:p-10 xl:p-10">
-    <div class="flex justify-between items-center mb-4">
+    <div class="w-3/4 lg:w-2/4 xl:w-2/4 mx-auto flex justify-between items-center mb-4">
         {#each listBtnDay as btn}
             <div class="flex flex-row gap-2">
                 <button 

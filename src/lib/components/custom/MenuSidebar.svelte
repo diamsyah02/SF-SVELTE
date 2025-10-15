@@ -16,6 +16,7 @@
   import { goto } from "$app/navigation";
   import { toast } from "svelte-sonner";
 
+  let loadImageStatus = false
   // Menu items.
   const items = [
     {
@@ -81,14 +82,16 @@
 >
   <div class="flex flex-col pb-10">
     <div class="flex flex-row items-center p-2 relative">
-      {#if $isLogin != ""}
-        <div class="w-[70%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl z-50 bg-blue-800/40 text-white px-10 py-4 rounded-full text-center">Hai Async</div>
+      {#if $isLogin != "" && loadImageStatus}
+        <div class="w-[70%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl lg:text-4xl xl:text-4xl z-50 bg-blue-800/40 text-white px-10 py-4 rounded-full text-center">Hai {$isLogin}</div>
       {/if}
       <img
-        src="https://www.dreamers.id/img_artikel/9yyy.jpg"
+        src="https://cdn.jsdelivr.net/gh/diamsyah02/FOR-TEST-ANYTHING/imgMenuSidebar.jpg"
         alt="Logo"
         class="w-full h-[150px] lg:h-full xl:h-full object-cover lg:object-contain xl:object-contain"
         loading="lazy"
+        onload={() => loadImageStatus = true}
+        onerror={() => toast.error("Image Menu Sidebar not found")}
       />
       <div
         class="block lg:hidden xl:hidden absolute top-2 right-2 cursor-pointer bg-white p-1 rounded-full"
