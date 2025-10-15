@@ -7,3 +7,4 @@ export const title = writable('Home');
 export const menuSidebar = writable(false);
 export const authSidebar = writable(false);
 export const isLoading = writable(false);
+export const isLogin = writable('');

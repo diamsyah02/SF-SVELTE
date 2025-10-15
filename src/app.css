@@ -122,6 +122,7 @@
 
 body {
   overflow: hidden;
+  background-color: #eaeaea;
 }
 
 /* Tambahkan di file CSS kamu yang di-load */
