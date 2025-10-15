@@ -1,8 +1,7 @@
 <script>
   import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-  import { title, isLoading, menuSidebar } from "@/lib/stores";
+  import { title, isLoading } from "@/lib/stores";
   title.update((value) => "Rundown");
-  menuSidebar.set(false);
 
   let rundownImg = 'RUN1'
   let listBtnDay = [

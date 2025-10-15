@@ -116,11 +116,12 @@
       {:else}
         <a
           href={item.url}
-          target={item.title === "Green Movement" ? "_blank" : ""}
+          target={item.title === "Green Movement" ? "_blank" : undefined}
           rel={item.title === "Green Movement"
             ? "noopener noreferrer"
             : undefined}
           class="flex flex-row gap-2 items-center py-2 px-3 hover:bg-blue-800/80 hover:text-white cursor-pointer"
+          onclick={() => menuSidebar.update((value) => !value)}
           aria-label={item.title}
         >
           <item.icon size={20} />

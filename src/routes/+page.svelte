@@ -1,9 +1,8 @@
 <script>
     import Banner from "@/lib/components/custom/home/Banner.svelte";
     import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-    import { title, menuSidebar } from "@/lib/stores";
+    import { title } from "@/lib/stores";
     title.update((value) => "Home");
-    menuSidebar.set(false);
 </script>
 <svelte:head>
     <title>Home</title>

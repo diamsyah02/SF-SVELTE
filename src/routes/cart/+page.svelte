@@ -1,8 +1,7 @@
 <script>
   import Blockquote from "@/lib/components/custom/Blockquote.svelte";
-  import { title, menuSidebar } from "@/lib/stores";
+  import { title } from "@/lib/stores";
   title.update((value) => "Cart");
-  menuSidebar.set(false);
 </script>
 <svelte:head>
     <title>Cart</title>
